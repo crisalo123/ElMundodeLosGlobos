@@ -37,7 +37,7 @@ export function BaseLayout({
       <div className="flex w-full flex-col">
         {/* NAVBAR */}
         {header && (
-          <header className="h-20 sm:h-24 rounded-tl-xl rounded-tr-xl bg-gradient-to-r from-[#6b2fac] via-[#7338e0] to-[#6b2fac] shadow-md flex items-center justify-between px-6 sm:px-16 relative font-[Cinzel] uppercase tracking-wide">
+          <header className="h-20 sm:h-24  bg-gradient-to-r from-[#6b2fac] via-[#7338e0] to-[#6b2fac] shadow-md flex items-center justify-between px-6 sm:px-16 relative font-[Cinzel] uppercase tracking-wide">
             {/* Logo + Nombre */}
             <div className="flex items-center gap-3">
               <IoBalloonSharp className="h-10 w-10 sm:h-16 sm:w-10 text-[#FFD700]" />
