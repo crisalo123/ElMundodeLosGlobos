@@ -30,7 +30,7 @@ export function BaseLayout({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen font-serif mx-2 sm:mx-5 mt-2",
+        "relative flex min-h-screen font-serif mx-0 md:mx-1 sm:mx-5 mt-0 md:mt-2",
         className
       )}
     >
