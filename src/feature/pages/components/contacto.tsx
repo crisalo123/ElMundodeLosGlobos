@@ -21,7 +21,7 @@ export const Contacto = () => {
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col gap-4 text-blue-800">
           <a
-            href="https://instagram.com/mundodelosglobos"
+            href="https://www.instagram.com/elmundoglobos/?igsh=MWZpamRxZXZnOTk3YQ%3D%3D#"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 hover:scale-105 transition"
