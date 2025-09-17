@@ -76,7 +76,8 @@ const currentDecoracion = useImageSlider(decoracionGlobos);
 
   return (
     <BaseLayout header>
-       <div className=" min-h-screen bg-gradient-to-b from-[#FBE6C2] via-[#FADFA1] to-[#FFF7E1]">
+       <div className="min-h-screen bg-gradient-to-b from-[#f3e8d6] via-[#f1deb0] to-[#fdf9ed]">
+
         {/* Hero con el arco */}
         <Balloon />
 

@@ -1,4 +1,5 @@
 import { FaInstagram, FaFacebookF, FaMapMarkerAlt } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6"; // 👈 Importamos el de TikTok
 import logoNequi from "@/assets/img/mediosPago/nequi.png";
 import logoDaviplata from "@/assets/img/mediosPago/daviplata.png";
 
@@ -18,8 +19,8 @@ export const Contacto = () => {
       </div>
 
       {/* Redes sociales */}
-      <div className="flex flex-col items-center gap-6">
-        <div className="flex flex-col gap-4 text-blue-800">
+      <div className="flex flex-col md:flex-row items-center gap-6">
+        <div className="flex flex-col md:flex-row gap-4 text-blue-800">
           <a
             href="https://www.instagram.com/elmundoglobos/?igsh=MWZpamRxZXZnOTk3YQ%3D%3D#"
             target="_blank"
@@ -28,9 +29,10 @@ export const Contacto = () => {
           >
             <FaInstagram size={35} className="text-pink-600" />
             <span className="text-xl font-['Playfair_Display']">
-              @mundodelosglobos
+              @elmundodelosglobos
             </span>
           </a>
+
           <a
             href="https://facebook.com/mundodelosglobos"
             target="_blank"
@@ -39,9 +41,23 @@ export const Contacto = () => {
           >
             <FaFacebookF size={35} className="text-blue-600" />
             <span className="text-xl font-['Playfair_Display']">
-              /mundodelosglobos
+              /elmundodelosglobos
             </span>
           </a>
+
+          {/* 👇 Nuevo TikTok */}
+          <a
+            href="https://www.tiktok.com/@mundodelosglobos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 hover:scale-105 transition"
+          >
+            <FaTiktok size={35} className="text-black" />
+            <span className="text-xl font-['Playfair_Display']">
+              @elmundodelosglobos
+            </span>
+          </a>
+
           <a
             href="https://maps.google.com"
             target="_blank"
