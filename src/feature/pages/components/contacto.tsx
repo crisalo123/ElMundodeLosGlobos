@@ -52,7 +52,7 @@ export const Contacto = () => {
           {/* TikTok */}
           <div>
             <a
-              href="https://www.tiktok.com/@mundodelosglobos"
+              href="https://www.tiktok.com/@elmundodelosglobos"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 hover:scale-105 transition"
