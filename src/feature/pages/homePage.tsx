@@ -1,6 +1,6 @@
 import { BaseLayout } from "../core/ui/base-layout";
 import { Balloon } from "../core/component/searchComponent/Balloon";
-import { motion , AnimatePresence  } from "framer-motion";
+import { motion   } from "framer-motion";
 
 
 import globo from "../../assets/img/globo.png";
@@ -17,8 +17,10 @@ import decoracion_2 from   '@/assets/img/imgDecoracion/decoracion_2.png'
 import decoracion_3 from   '@/assets/img/imgDecoracion/decoracion_3.png'
 import decoracion_4 from   '@/assets/img/imgDecoracion/decoracion_4.png'
 import decoracion_5 from    '@/assets/img/imgDecoracion/decoracion_5.png'
-import { useImageSlider } from "./useImageSlider";
+
 import { Contacto } from "./components/contacto";
+import { Servicios } from "./components/servicios";
+import { Domicilio } from "./components/domicilio";
 
 
 
@@ -66,9 +68,6 @@ export const HomePage = () => {
   };
 
 
-const currentIndex = useImageSlider(inmobiliarioImages);
-const currentStampado = useImageSlider(estampadosGlobos);
-const currentDecoracion = useImageSlider(decoracionGlobos);
 
 
 
@@ -131,92 +130,8 @@ const currentDecoracion = useImageSlider(decoracionGlobos);
         </p>
       </section>
 
-        {/* Sección Servicios */}
-          <section
-         id="services"
-         className=" flex flex-col justify-center items-center  py-3  "
-        >
-         <h2 className="text-4xl font-bold text-purple-700 mb-10 font-['Cinzel']">Servicios</h2>
-
-         <div className="grid md:grid-cols-3 gap-8 max-w-5xl w-full px-6">
-         {/* Servicio 1 */}
-         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
-         <div className="relative w-full h-48 overflow-hidden rounded-lg mb-4">
-         <AnimatePresence mode="wait">
-           <motion.img
-             key={currentStampado}
-             src={estampadosGlobos[currentStampado]}
-             alt={`Inmobiliario ${currentStampado + 1}`}
-             loading="lazy"
-             className="w-full h-full object-cover rounded-lg absolute inset-0"
-             initial={{ opacity: 0, x: 50 }}
-             animate={{ opacity: 1, x: 0 }}
-             exit={{ opacity: 0, x: -50 }}
-             transition={{ duration: 0.8 }}
-           />
-         </AnimatePresence>
-       </div>
-      <h3 className="text-xl font-semibold text-purple-700">
-        Globos Publicitarios
-      </h3>
-      <p className="text-gray-600 mt-2">
-        Personaliza tus globos con logos y mensajes para eventos y campañas.
-      </p>
-    </div>
-
-    {/* Servicio 2 */}
-    <div className="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
-       <div className="relative w-full h-52 overflow-hidden rounded-lg mb-4">
-         <AnimatePresence mode="wait">
-           <motion.img
-             key={currentIndex}
-             src={inmobiliarioImages[currentIndex]}
-             alt={`Inmobiliario ${currentIndex + 1}`}
-             loading="lazy"
-             className="w-full h-full object-cover rounded-lg absolute inset-0"
-             initial={{ opacity: 0, x: 50 }}
-             animate={{ opacity: 1, x: 0 }}
-             exit={{ opacity: 0, x: -50 }}
-             transition={{ duration: 0.8 }}
-           />
-         </AnimatePresence>
-       </div>
-       <h3 className="text-xl font-semibold text-purple-700">
-         Alquiler de mobiliario
-       </h3>
-       <p className="text-gray-600 mt-2">
-         Mesas, sillas y accesorios decorativos para complementar tus eventos.
-       </p>
-     </div>
-
-    {/* Servicio 3 */}
-    <div className="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
-      <div className="relative w-full h-52 overflow-hidden rounded-lg mb-4">
-         <AnimatePresence mode="wait">
-           <motion.img
-             key={currentDecoracion}
-             src={decoracionGlobos[currentDecoracion]}
-             alt={`Inmobiliario ${currentDecoracion + 1}`}
-             loading="lazy"
-             className="w-full h-full object-cover rounded-lg absolute inset-0"
-             initial={{ opacity: 0, x: 50 }}
-             animate={{ opacity: 1, x: 0 }}
-             exit={{ opacity: 0, x: -50 }}
-             transition={{ duration: 0.8 }}
-           />
-         </AnimatePresence>
-       </div>
-      <h3 className="text-xl font-semibold text-purple-700">
-        Decoración con Globos
-      </h3>
-      <p className="text-gray-600 mt-2">
-        Diseños creativos en arcos, columnas y centros de mesa únicos.
-      </p>
-    </div>
-  </div>
-</section>
-
-        {/* Sección Contacto */}
+     <Servicios decoracionGlobos={decoracionGlobos} estampadosGlobos={estampadosGlobos} inmobiliarioImages={inmobiliarioImages}/>
+      <Domicilio />
      <Contacto />
 
          <a
