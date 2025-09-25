@@ -163,3 +163,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes heartbeat {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.15);
+    }
+    40% {
+      transform: scale(0.95);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+}

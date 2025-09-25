@@ -4,7 +4,7 @@ import { motion   } from "framer-motion";
 
 
 import globo from "../../assets/img/globo.png";
-import whatApp from "../../assets/img/whatsAppIcon.png";
+
 import { useState } from "react";
 import imobiliario_1 from '@/assets/img/imgMoviliario/Inmoviliario_1.png'
 import imobiliario_2 from '@/assets/img/imgMoviliario/Inmoviliario_2.png'
@@ -18,9 +18,11 @@ import decoracion_3 from   '@/assets/img/imgDecoracion/decoracion_3.png'
 import decoracion_4 from   '@/assets/img/imgDecoracion/decoracion_4.png'
 import decoracion_5 from    '@/assets/img/imgDecoracion/decoracion_5.png'
 
+
 import { Contacto } from "./components/contacto";
 import { Servicios } from "./components/servicios";
 import { Domicilio } from "./components/domicilio";
+import { ChatBox } from "./components/chatBox";
 
 
 
@@ -51,6 +53,7 @@ const colorFilters: Record<string, string> = {
 };
 
 export const HomePage = () => {
+
    
   const [globoColors, setGloboColors] = useState([
     0,
@@ -132,21 +135,10 @@ export const HomePage = () => {
 
      <Servicios decoracionGlobos={decoracionGlobos} estampadosGlobos={estampadosGlobos} inmobiliarioImages={inmobiliarioImages}/>
       <Domicilio />
-     <Contacto />
-
-         <a
-          href="https://wa.me/573104801054"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50"
-        >
-          <img
-            src={whatApp}
-            alt="WhatsApp"
-            className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform"
-          />
-        </a>
+      <Contacto />
+      <ChatBox />
       </div>
+    
     </BaseLayout>
   );
 };
