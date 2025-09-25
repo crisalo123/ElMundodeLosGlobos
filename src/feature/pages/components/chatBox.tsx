@@ -40,6 +40,7 @@ export const ChatBox = () => {
 
         {/* Botón flotante con efecto palpito */}
         <button
+         type="button"
           onClick={() => setOpenChat(!openChat)}
         className="relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-transform animate-heartbeat"
 
