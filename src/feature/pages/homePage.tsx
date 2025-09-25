@@ -53,8 +53,6 @@ const colorFilters: Record<string, string> = {
 };
 
 export const HomePage = () => {
-
-   
   const [globoColors, setGloboColors] = useState([
     0,
     1,
@@ -77,12 +75,11 @@ export const HomePage = () => {
 
 
   return (
+    <>
     <BaseLayout header>
        <div className="min-h-screen bg-gradient-to-b from-[#f3e8d6] via-[#f1deb0] to-[#fdf9ed]">
-
         {/* Hero con el arco */}
         <Balloon />
-
         {/* Globos dinámicos */}
         <div className="absolute flex -space-x-6 md:-space-x-16 right-3 top-24">
           {globoColors.map((colorIndex, i) => (
@@ -136,9 +133,11 @@ export const HomePage = () => {
      <Servicios decoracionGlobos={decoracionGlobos} estampadosGlobos={estampadosGlobos} inmobiliarioImages={inmobiliarioImages}/>
       <Domicilio />
       <Contacto />
-      <ChatBox />
+      
       </div>
     
     </BaseLayout>
+    <ChatBox />
+     </>
   );
 };
