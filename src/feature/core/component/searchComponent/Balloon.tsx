@@ -18,25 +18,26 @@ export const Balloon = () => {
        
 
         {/* NUEVA FRANJA DE SERVICIOS */}
-<div className="mt-6 bg-gradient-to-r from-purple-200/60 via-white/50 to-purple-200/60 px-6 py-4 rounded-2xl shadow-lg border border-purple-300/40">
-  <p className="text-base md:text-2xl font-['Cinzel'] font-bold text-purple-900 drop-shadow-sm leading-relaxed">
+     <div className="mt-6 bg-gradient-to-r from-purple-200/60 via-white/50 to-purple-200/60 px-6 py-4 rounded-2xl shadow-lg border border-purple-300/40">
+     <p className="text-base md:text-2xl font-['Cinzel'] font-bold text-purple-900 drop-shadow-sm leading-relaxed">
     Globos con helio <span className="text-purple-700">100% certificado</span> · 
-    <span className="text-green-700"> Domicilios</span> · 
+    <span className="text-emerald-700"> Domicilios</span> · 
     Decoración globos · 
-    Bouquet de globos · 
-    Globos publicitarios
+    Bouquet de globos para toda ocasión · 
+    Globos publicitarios <br />
+    <span className="text-emerald-700">Alquiler de mobiliario para eventos</span>
   </p>
-</div>
+   </div>
 
         <a
           href={`https://wa.me/${phoneNumber}?text=${message}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-block px-6 py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow-md hover:scale-105 transition"
+          className="mt-6 inline-block px-6 py-3 shadow-2xl rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold  hover:scale-105 transition"
         >
           Cotizar en WhatsApp <br />
           <img src={whatApp}  alt="Icono de whatApp" className="w-8 h-8 text-white bg-white rounded-full absolute  -mx-3 " />
-          <span className="font-['Courier_New'] font-semibold tracking-wider">
+          <span className="font-['Courier_New'] font-semibold tracking-wider text-lg">
             3104801054
           </span>
         </a>

@@ -3,6 +3,10 @@ import { FaTiktok } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md"; // 👈 Nuevo ícono de correo
 import logoNequi from "@/assets/img/mediosPago/nequi.png";
 import logoDaviplata from "@/assets/img/mediosPago/daviplata.png";
+import logoBancolombia from "@/assets/img/mediosPago/bancolombia.svg"
+import logoDavivienda from '@/assets/img/mediosPago/davivienda-37856_logosenvector.com_5.svg'
+import visa from '@/assets/img/mediosPago/Visa-Logo-SVG_002.svg'
+import masterCard from '@/assets/img/mediosPago/MasterCard_Logo.svg.png'
 
 export const Contacto = () => {
   return (
@@ -30,7 +34,7 @@ export const Contacto = () => {
             >
               <FaInstagram size={35} className="text-pink-600" />
               <span className="text-xl font-['Playfair_Display']">
-                @elmundodelosglobos
+                elmundodelosglobos
               </span>
             </a>
           </div>
@@ -44,7 +48,7 @@ export const Contacto = () => {
             >
               <FaFacebookF size={35} className="text-blue-600" />
               <span className="text-xl font-['Playfair_Display']">
-                /elmundodelosglobos
+                elmundodelosglobos
               </span>
             </a>
           </div>
@@ -59,7 +63,7 @@ export const Contacto = () => {
             >
               <FaTiktok size={35} className="text-black" />
               <span className="text-xl font-['Playfair_Display']">
-                @elmundodelosglobos
+                el mundo de los globos
               </span>
             </a>
           </div>
@@ -111,23 +115,18 @@ export const Contacto = () => {
       </div>
 
       {/* Medios de pago */}
-      <div className="mt-14 w-full max-w-md">
-        <h3 className="text-lg md:text-3xl font-semibold text-purple-700 text-center mb-6 font-['Playfair_Display']">
-          Nuestros medios de pago
+       <div className="mt-14 w-full max-w-2xl bg-gradient-to-r from-purple-100/70 via-white/50 to-purple-100/70 backdrop-blur-md rounded-2xl py-8 px-6 shadow-lg border border-purple-200/50">
+        <h3 className="text-lg md:text-3xl font-semibold text-purple-800 text-center mb-8 font-['Playfair_Display'] drop-shadow-sm">
+         Todos los medios de pago
         </h3>
-        <div className="flex justify-center gap-12">
-          <div className="flex flex-col items-center hover:scale-110 transition">
-            <img src={logoNequi} alt="Nequi" className="w-20 h-auto" />
-            <span className="text-base mt-2 font-medium text-gray-700 font-['Playfair_Display']">
-              Nequi
-            </span>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center">
+          {[logoBancolombia, logoNequi, visa, logoNequi, masterCard,logoDavivienda,logoDaviplata ].map((img, i:number) => (
+            <div key={i} className="hover:scale-110 transition-transform duration-300">
+            <img src={img} alt="Nequi" className="w-16 md:w-20 h-auto drop-shadow-md" />  
           </div>
-          <div className="flex flex-col items-center hover:scale-110 transition">
-            <img src={logoDaviplata} alt="Daviplata" className="w-20 h-auto" />
-            <span className="text-base mt-2 font-medium text-gray-700 font-['Playfair_Display']">
-              Daviplata
-            </span>
-          </div>
+          ))}
+          
+          
         </div>
       </div>
     </section>
