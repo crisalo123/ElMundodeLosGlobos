@@ -23,6 +23,7 @@ import { Contacto } from "./components/contacto";
 import { Servicios } from "./components/servicios";
 import { Domicilio } from "./components/domicilio";
 import { ChatBox } from "./components/chatBox";
+import { Ballons } from "./components/ballons";
 
 
 
@@ -119,6 +120,9 @@ export const HomePage = () => {
             />
           ))}
        </div>
+       <div>
+        <Ballons />
+        </div>
 
         {/* Sección Nosotros */}
         <section id="about" className="flex flex-col justify-center items-center py-10">

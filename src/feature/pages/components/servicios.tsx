@@ -20,7 +20,7 @@ export const Servicios: React.FC<Props> = ({
   return (
     <section
       id="services"
-      className="flex flex-col justify-center items-center py-16 relative"
+      className="flex flex-col justify-center items-center py-10 relative"
     >
       <h2 className="text-4xl font-bold text-purple-700 mb-14 font-['Cinzel'] tracking-wide">
         Servicios

@@ -185,3 +185,21 @@
     animation: heartbeat 1.5s ease-in-out infinite;
   }
 }
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.animate-scrollX {
+  display: flex;
+  animation: scrollX 7s linear infinite;
+}
+
+.hover\:pause-scroll:hover {
+  animation-play-state: paused;
+}
