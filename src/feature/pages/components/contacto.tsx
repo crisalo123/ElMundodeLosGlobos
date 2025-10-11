@@ -120,7 +120,7 @@ export const Contacto = () => {
          Todos los medios de pago
         </h3>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center">
-          {[logoBancolombia, logoNequi, visa, logoNequi, masterCard,logoDavivienda,logoDaviplata ].map((img, i:number) => (
+          {[logoBancolombia, logoNequi, visa, masterCard,logoDavivienda,logoDaviplata ].map((img, i:number) => (
             <div key={i} className="hover:scale-110 transition-transform duration-300">
             <img src={img} alt="Nequi" className="w-16 md:w-20 h-auto drop-shadow-md" />  
           </div>

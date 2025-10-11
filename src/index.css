@@ -191,13 +191,15 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(
+      -350%
+    ); /* 👈 justo la mitad, porque duplicamos el array */
   }
 }
 
 .animate-scrollX {
   display: flex;
-  animation: scrollX 7s linear infinite;
+  animation: scrollX 15s linear infinite; /* 👈 velocidad ideal, puedes probar 6s o 10s */
 }
 
 .hover\:pause-scroll:hover {
