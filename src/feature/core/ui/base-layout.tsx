@@ -63,8 +63,9 @@ export function BaseLayout({
                 >
                   <span>
                     El Mundo <br />
-                    de los Globos
+                    de los Globos      
                   </span>
+                  <span className='mx-5 text-lg'> 20 años </span>
                 </button>
               </div>
 
