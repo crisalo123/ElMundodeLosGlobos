@@ -46,7 +46,7 @@ export function BaseLayout({
             className={cn(
               "fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out",
               scrolled
-                ? "backdrop-blur-md bg-primary-100 shadow-md border-b border-white/20"
+                ? "backdrop-blur-md bg-primary-500 shadow-md border-b border-white/20"
                 : "bg-primary-500"
             )}
           >
@@ -111,7 +111,7 @@ export function BaseLayout({
                   className={cn(
                     "absolute top-full right-0 w-48 rounded-bl-xl shadow-lg sm:hidden flex flex-col py-3 z-50 transition-all duration-500 ease-in-out",
                     scrolled
-                      ? "backdrop-blur-md bg-primary-100 border border-white/20"
+                      ? "backdrop-blur-md bg-primary-500 border border-white/20"
                       : "backdrop-blur-md bg-primary-500"
                   )}
                 >
