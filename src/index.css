@@ -204,3 +204,26 @@
 .hover\:pause-scroll:hover {
   animation-play-state: paused;
 }
+
+@keyframes goldenShine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.animate-goldenShine {
+  background-image: linear-gradient(
+    75deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: goldenShine 3.5s linear infinite;
+}
