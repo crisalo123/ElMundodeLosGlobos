@@ -250,10 +250,24 @@
   animation: glow-pulse 1.8s ease-in-out infinite;
 }
 
+@keyframes softShine {
+  0% {
+    background-position: -200%;
+    filter: brightness(1);
+  }
+  50% {
+    background-position: 200%;
+    filter: brightness(1.3);
+  }
+  100% {
+    background-position: -200%;
+    filter: brightness(1);
+  }
+}
 
-canvas {
-  display: block;
-  margin: 0 auto;
+.animate-softShine {
+  background-size: 200% auto;
+  animation: softShine 6s ease-in-out infinite;
 }
 
 /* Efecto de brillo móvil */

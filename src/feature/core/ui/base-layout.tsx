@@ -66,14 +66,14 @@ export function BaseLayout({
               </div>
 
               {/* 🌟 Marca de Agua “20 Años” */}
-              <div className="absolute mx-56 top-1/2 pt-3 -translate-x-1/2 -translate-y-1/2 opacity-90 sm:opacity-90 pointer-events-none select-none">
-              <span className="text-4xl md:text-7xl font-[Great_Vibes] font-extrabold 
-              text-transparent bg-gradient-to-r from-[#fff] via-[#ffff] to-[#ffff] 
-             bg-clip-text drop-shadow-[0_0_15px_#ffec8b]
-           animate-goldenShine">
+              <div className="absolute mx-56 top-1/2 pt-3 -translate-x-1/2 -translate-y-1/2 opacity-95 pointer-events-none select-none">
+              <span
+                className="relative text-4xl md:text-5xl font-semibold  md:pl-62 font-[Great_Vibes] text-transparent bg-clip-text bg-gradient-to-r from-[#c8a85a] via-[#ffe9a7] to-[#d4af37] 
+                           drop-shadow-[0_0_12px_rgba(255,235,150,0.5)] animate-softShine"
+              >
                 20 Años
               </span>
-              </div>
+             </div>
 
               {/* Menu Desktop */}
               <nav className="hidden sm:flex gap-10">
