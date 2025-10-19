@@ -29,18 +29,34 @@ export const Balloon = () => {
   </p>
    </div>
 
-        <a
-          href={`https://wa.me/${phoneNumber}?text=${message}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-block px-6 py-3 shadow-2xl rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold  hover:scale-105 transition"
-        >
-          Cotizar en WhatsApp <br />
-          <img src={whatApp}  alt="Icono de whatApp" className="w-8 h-8 text-white bg-white rounded-full absolute  -mx-3 " />
-          <span className="font-['Courier_New'] font-semibold tracking-wider text-lg">
-            3104801054
-          </span>
-        </a>
+       <a
+  href={`https://wa.me/${phoneNumber}?text=${message}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative mt-8 inline-flex items-center justify-center gap-2 px-8 py-4 
+  font-semibold text-white text-lg rounded-2xl 
+  bg-gradient-to-r from-green-400 via-emerald-500 to-green-600 
+  shadow-[0_0_15px_rgba(16,185,129,0.6)] 
+  hover:shadow-[0_0_25px_rgba(16,185,129,0.9)]
+  overflow-hidden transition-transform duration-300 hover:scale-105 animate-glowPulse"
+>
+  {/* efecto brillante que pasa */}
+  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-60 animate-shine" />
+
+  {/* Ícono */}
+  <img
+    src={whatApp}
+    alt="WhatsApp"
+    className="relative z-10 w-10 h-10 animate-float bg-white rounded-full"
+  />
+
+  {/* Texto */}
+  <div className="relative z-10 flex flex-col leading-tight">
+    <span className=" font-light">Cotizar en</span>
+    <span className="text-xl font-bold tracking-wide">WhatsApp</span>
+  </div>
+</a>
+
       </div>
     </section>
   );

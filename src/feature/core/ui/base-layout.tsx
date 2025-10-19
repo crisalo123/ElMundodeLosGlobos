@@ -66,9 +66,9 @@ export function BaseLayout({
               </div>
 
               {/* 🌟 Marca de Agua “20 Años” */}
-              <div className="absolute mx-56 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-90 sm:opacity-90 pointer-events-none select-none">
-              <span className="text-5xl md:text-7xl font-[Great_Vibes] font-bold 
-              text-transparent bg-gradient-to-r from-[#fff6b7] via-[#ffe066] to-[#ffd24c] 
+              <div className="absolute mx-56 top-1/2 pt-3 -translate-x-1/2 -translate-y-1/2 opacity-90 sm:opacity-90 pointer-events-none select-none">
+              <span className="text-4xl md:text-7xl font-[Great_Vibes] font-extrabold 
+              text-transparent bg-gradient-to-r from-[#fff] via-[#ffff] to-[#ffff] 
              bg-clip-text drop-shadow-[0_0_15px_#ffec8b]
            animate-goldenShine">
                 20 Años

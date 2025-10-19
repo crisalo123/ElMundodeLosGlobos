@@ -25,8 +25,8 @@ export const Domicilio = () => {
           </h2>
           <p className="text-gray-600 mt-2 text-lg">
             Llevamos tus decoraciones y arreglos de globos directamente a tu
-            puerta 🚪✨. También puedes pedirnos a través de{" "}
-            <span className="font-semibold text-pink-600">Rappi</span> 🛵💨.
+            puerta 🚪✨. También puedes solicitar a través de{" "}
+            <span className="font-semibold text-pink-600">Rappi/el mundo de los globos</span> 🛵💨.
           </p>
         </div>
       </div>
