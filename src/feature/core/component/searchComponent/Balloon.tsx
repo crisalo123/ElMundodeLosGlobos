@@ -12,8 +12,8 @@ export const Balloon = () => {
     >
       {/* Contenido principal */}
       <div className="relative z-10 max-w-2xl text-center mt-10">
-        <h2 className="pt-20 md:pt-0 text-3xl 2xl:text-5xl font-extrabold drop-shadow-lg bg-gradient-to-r from-gren-800 via-gray-700 to-gray-800 bg-clip-text text-transparent font-['Cinzel']">
-          El mundo de los Globos
+        <h2 className="pt-20 md:pt-0 text-3xl 2xl:text-5xl font-extrabold drop-shadow-lg bg-gradient-to-r from-blue-800 via-gray-700 to-green-800 bg-clip-text text-transparent font-['Cinzel']">
+          El mundo de los Globos 
         </h2>
        
 

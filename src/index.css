@@ -294,16 +294,6 @@
 }
 
 /* Pulso suave */
-@keyframes glowPulse {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.6),
-                0 0 30px rgba(52, 211, 153, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(16, 185, 129, 0.8),
-                0 0 45px rgba(52, 211, 153, 0.7);
-  }
-}
 
 .animate-glowPulse {
   animation: glowPulse 2.8s ease-in-out infinite;
@@ -321,4 +311,30 @@
 
 .animate-float {
   animation: float 2.2s ease-in-out infinite;
+}
+
+@keyframes goldenPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 230, 150, 0.4), 0 0 40px rgba(255, 220, 100, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 245, 180, 0.6), 0 0 70px rgba(255, 230, 120, 0.4);
+  }
+}
+
+@keyframes rotateGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-goldenPulse {
+  animation: goldenPulse 3s ease-in-out infinite;
+}
+
+.animate-rotateGlow {
+  animation: rotateGlow 8s linear infinite;
 }
