@@ -76,7 +76,7 @@ export function BaseLayout({
       <span className="text-xl sm:text-2xl md:text-3xl leading-tight font-[Great_Vibes] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#c8a85a] via-[#ffe9a7] to-[#d4af37] drop-shadow-[0_0_8px_rgba(255,235,150,0.5)]">
         20 Años
       </span>
-      <span className="text-[9.5px] font-semibold sm:text-[10px] md:text-xs uppercase tracking-[0.2em] text-[#fff6b7] mt-1 font-[Cinzel]">
+      <span className="text-[9.5px] font-medium sm:text-[10px] md:text-xs uppercase tracking-[0.2em] text-[#fff6b7] mt-1 font-[Cinzel]">
         Since 2006
       </span>
     </div>
