@@ -66,7 +66,7 @@ export function BaseLayout({
               </div>
 
               {/* 🌟 Marca de Agua “20 Años” */}
-                  <div className="absolute mx-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+                  <div className="absolute  mx-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
   <div className="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full border-[1.5px] border-[#d4af37] bg-gradient-to-tr from-[#fff6b7]/10 via-[#ffec8b]/20 to-[#d4af37]/10 shadow-[0_0_14px_rgba(255,215,0,0.4)] animate-goldenPulse overflow-hidden">
     {/* Efecto de halo */}
     <div className="absolute inset-0 rounded-full border-[3px] border-transparent bg-[conic-gradient(from_0deg,rgba(255,230,150,0.4)_0deg,transparent_120deg,rgba(255,230,150,0.4)_240deg,transparent_360deg)] animate-rotateGlow" />
@@ -76,7 +76,7 @@ export function BaseLayout({
       <span className="text-xl sm:text-2xl md:text-3xl leading-tight font-[Great_Vibes] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#c8a85a] via-[#ffe9a7] to-[#d4af37] drop-shadow-[0_0_8px_rgba(255,235,150,0.5)]">
         20 Años
       </span>
-      <span className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.2em] text-[#fff6b7] mt-1 font-[Cinzel]">
+      <span className="text-[9.5px] font-semibold sm:text-[10px] md:text-xs uppercase tracking-[0.2em] text-[#fff6b7] mt-1 font-[Cinzel]">
         Since 2006
       </span>
     </div>
